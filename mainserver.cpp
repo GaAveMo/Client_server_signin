@@ -50,52 +50,9 @@ int main(int argc, char* argv[])
 
 
 
-	///////////////////////////////////////////////
-
-
-	/*memset((char*)&si_other1, 0, sizeof(si_other1));
-	si_other1.sin_family = AF_INET;
-	if (1 == argc)
-	{
-		si_other1.sin_port = htons(PORT);
-		si_other1.sin_addr.S_un.S_addr = inet_addr(SERVER);
-		printf("1: Server - addr=%s , port=%d\n", SERVER, PORT);
-	}
-	else if (2 == argc)
-	{
-		si_other1.sin_port = htons(atoi(argv[1]));
-		si_other1.sin_addr.S_un.S_addr = inet_addr(SERVER);
-		printf("2: argv[0]: Server - addr=%s , port=%d\n", SERVER, atoi(argv[1]));
-	}
-	else
-	{
-		si_other1.sin_port = htons(atoi(argv[2]));
-		si_other1.sin_addr.S_un.S_addr = inet_addr(argv[1]);
-		printf("3: Server - addr=%s , port=%d\n", argv[1], atoi(argv[2]));
-	}*/
-
-	//start communication  lifecircle
-
-	//if (signInClient(client_sock, si_other, slen))
-	//{
-	//	printf("OK!!!\n");
-	//	while (1)
-	//	{
-	//		memset(buf, '\0', BUFLEN);
-	//		memset(message, '\0', BUFLEN);
-	//		printf("Enter message: ");
-	//		gets_s(message, BUFLEN);
-	//		client_sock.SendDatagram(message, (int)strlen(message), (struct sockaddr*)&si_other1, slen1);
-	//		client_sock.RecvDatagram(buf, BUFLEN, (struct sockaddr*)&si_other1, &slen1);
-	//		printf("Answer: %s\n", buf);
-	//	}
-	//}
 	while (1)
 	{
-		memset(answ, '\0', BUFLEN);
-		memset(buf, '\0', BUFLEN);
-		memset(message, '\0', BUFLEN);
-		memset(username, '\0', BUFLEN);
+		
 		printf("\nEnter username : ");
 		gets_s(username, BUFLEN);
 
@@ -134,4 +91,4 @@ int main(int argc, char* argv[])
 	return 0;
 }
 Footer
-© 2022 GitHub, Inc.
+Â© 2022 GitHub, Inc.
