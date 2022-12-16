@@ -34,33 +34,10 @@ int main(int argc, char* argv[])
 
 	UDPServer server(srvport);
 	slen = sizeof(si_other);
-	//slen1 = sizeof(si_other1);
-
-	//keep listening for data
-
-	//memset((char*)&si_other, 0, sizeof(si_other));
-
-	//if (signInServer(server, si_other, slen))
-	//{
-	//	while (1)
-	//	{
-	//		memset(msg, '\0', BUFLEN);
-	//		memset(buf, '\0', BUFLEN);
-	//		//memset((char*)&si_other, 0, sizeof(si_other));
-	//		printf("Waiting for data...   ");
-	//		server.RecvDatagram(buf, BUFLEN, (struct sockaddr*)&si_other1, &slen1);
-	//		printf("%s ", buf);
-	//		printf("\nAnswer : ");
-	//		gets_s(msg, BUFLEN);
-	//		server.SendDatagram(msg, (int)strlen(msg), (struct sockaddr*)&si_other1, slen1);
-	//	}
-	//}
+	
 	while (1)
 	{
-		memset(username, '\0', BUFLEN);
-		memset(password, '\0', BUFLEN);
-		memset(msg, '\0', BUFLEN);
-		memset(buf, '\0', BUFLEN);
+		
 
 		printf("Waiting for username...   ");
 		fflush(stdout);
